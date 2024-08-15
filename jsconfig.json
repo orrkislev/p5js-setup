@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "module": "commonjs",
+      "checkJs": true,
+      "types": ["./p5.global-mode.d.ts"]
+    },
+    "include": ["**/*.js", "src/**/*.js", "library/**/*.js"],
+    "exclude": ["node_modules"]
+  }

@@ -868,6 +868,32 @@ declare function ellipse(x: number, y: number, w: number, h?: number): p5;
 declare function ellipse(x: number, y: number, w: number, h: number, detail: number): void;
 
 /**
+ * Draws a circle to the screen. A circle is a simple closed shape. 
+ * It is the set of all points in a plane that are at a given 
+ * distance from a given point, the centre. 
+ * This function is a special case of the ellipse() function, 
+ * where the width and height of the ellipse are the same.
+ * 
+ * @param x the x-coordinate of the center of the circle
+ * @param y the y-coordinate of the center of the circle
+ * @param r radius of the circle
+ */
+declare function circle(x: number, y: number, r: number): p5;
+
+/**
+ *  Draws a square to the screen. A square is a
+ * four-sided shape with every angle at ninety degrees.
+ * By default, the first two parameters set the location of the top-left corner,
+ * the third sets both the width and height of the square.
+ * The origin may be changed with the rectMode() function.
+ * 
+ * @param x the x-coordinate position of the square, by default, it is the top-left corner of the square
+ * @param y the y-coordinate position of the square, by default, it is the top-left corner of the square
+ * @param size the size of the square
+ */
+declare function square(x: number, y: number, size: number): p5;
+
+/**
  *   Draws a line (a direct path between two points) to 
  *   the screen. The version of line() with four 
  *   parameters draws the line in 2D. To color a line, 
